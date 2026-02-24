@@ -28,8 +28,8 @@ sample text zh:
 愿君多采撷，此物最相思
 王维《相思》
 
-wait,do you want to read the story?look at the repository<Gutenberg_nano>
-ちょっと待って！なにか本を読みたいかい？リポジトリ「Gutenberg_nano」を除いて見てね！
+wait,do you want to read the story?look at the repository<櫻狐_nano>
+ちょっと待って！なにか本を読みたいかい？リポジトリ「櫻狐_nano」を除いて見てね！
 
 --------------------
 end of file.
