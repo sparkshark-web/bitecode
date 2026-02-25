@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>profile/Overview - [youruserid]・Bitecode</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  background: #f6f8fa;
+  color: #24292f;
+}
+
+/* ===== トップバー ===== */
+.topbar {
+  background: #ffffff;
+  border-bottom: 1px solid #d0d7de;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 15px;
+}
+
+.menu {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.topname {
+  font-weight: 600;
+}
+
+/* ===== タブメニュー ===== */
+.tabs {
+  display: flex;
+  gap: 20px;
+  padding: 0 40px;
+  border-bottom: 1px solid #d0d7de;
+  background: #fff;
+}
+
+.tabs a {
+  padding: 15px 0;
+  text-decoration: none;
+  color: #24292f;
+  font-size: 14px;
+}
+
+.tabs a.active {
+  border-bottom: 2px solid #fd8c73;
+  font-weight: 600;
+}
+
+/* ===== メインレイアウト ===== */
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+  display: flex;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+/* ===== 左プロフィール ===== */
+.profile {
+  width: 280px;
+}
+
+.avatar {
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid #d0d7de;
+}
+
+.profile h2 {
+  margin-bottom: 5px;
+}
+
+.profile .subname {
+  color: #57606a;
+  margin-bottom: 15px;
+}
+
+.edit-btn {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #d0d7de;
+  background: #f6f8fa;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.profile a {
+  display: block;
+  text-decoration: none;
+  color: #0969da;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* ===== 右コンテンツ ===== */
+.content {
+  flex: 1;
+}
+
+/* READMEカード */
+.readme {
+  background: #ffffff;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.readme h3 {
+  margin-top: 0;
+}
+
+/* Popular repositories */
+.section-title {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.repo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.repo {
+  background: #ffffff;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.repo h4 {
+  margin: 0 0 8px;
+  color: #0969da;
+}
+
+.repo p {
+  margin: 0;
+  font-size: 14px;
+  color: #57606a;
+}
+
+/* レスポンシブ */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .repo-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.repolink {
+  color: #3c64b4;           /* 通常時 */
+  text-decoration: none;  /* 下線を消したい場合 */
+}
+
+.repolink:visited {
+  color: #3c64b4;           /* クリック後（訪問済み） */
+}
+
+.repolink:hover {
+  color: #3c65b4;           /* マウスを乗せたとき */
+}
+
+.repolink:active {
+  color: #3c64b4;           /* クリックしている瞬間 */
+}
+
+.homelink {
+  color: black;           /* 通常時 */
+  text-decoration: none;  /* 下線を消したい場合 */
+}
+
+.homelink:visited {
+  color: black;           /* クリック後（訪問済み） */
+}
+
+.homelink:hover {
+  color: black;           /* マウスを乗せたとき */
+}
+
+.homelink:active {
+  color: black;           /* クリックしている瞬間 */
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== トップバー ===== -->
+<div class="topbar">
+  <div class="menu">☰</div>
+  <div class="logo">Bite code</div>
+  <div class="topname"><a href="profile.html" class="homelink">[youruserid]</a></div>
+</div>
+
+<!-- ===== タブ ===== -->
+<div class="tabs">
+  <a href="profile.html" class="active">Overview</a>
+  <a href="profile_repos.html">Repositories</a>
+  <a href="profile_projects.html">Projects</a>
+  <a href="profile_packages.html">Packages</a>
+  <a href="profile_release.html">Release</a>
+  <a href="#">Stars</a>
+</div>
+
+<!-- ===== メイン ===== -->
+<div class="container">
+
+  <!-- 左プロフィール -->
+  <div class="profile">
+    <img src="icon_profile.png" class="avatar">
+    <h2>[yourusername]</h2>
+    <div class="subname">@[youruserid]</div>
+
+    <button class="edit-btn">Edit profile</button>
+
+    <a href="[customurl" target="_blank">🔗 [customurl]</a>
+  </div>
+
+  <!-- 右側 -->
+  <div class="content">
+
+    <!-- README -->
+    <div class="readme">
+      <p>
+        [youruserid] / README.md<br>
+      </p>
+      <h3>Hi there 👋</h3>
+      <p>
+     [readme.md]
+      </p>
+    </div>
+
+    <!-- Popular repos -->
+    <div class="section-title">Popular repositories</div>
+
+    <div class="repo-grid">
+
+      <div class="repo">
+        <h4><a href="[youruserid]/repo_top.html" class="repolink">[youruserid]</a></h4>
+        <p>profile repo</p>
+      </div>
+      
+      <div class="repo">
+        <h4><a href="[repo_name]/repo_top.html" class="repolink">[repo_name]</a></h4>
+        <p>[repo_about]</p>
+      </div>
+
+      <div class="repo">
+        <h4><a href="[repo_name]/repo_top.html" class="repolink">[repo_name]</a></h4>
+        <p>[repo_about]</p>
+      </div>
+
+      <div class="repo">
+        <h4><a href="[repo_name]/repo_top.html" class="repolink">[repo_name]</a></h4>
+        <p>[repo_about]</p>
+      </div>
+      
+      <a href="profile_repos.html" class="repolink">view other repositorys→</a>
+
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
